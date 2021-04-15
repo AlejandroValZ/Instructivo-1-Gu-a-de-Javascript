@@ -1,0 +1,41 @@
+body {
+    background: #fff;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    margin-top: 100px;
+    width: fit-content;
+    text-align: center;
+    background-color: rgb(88, 226, 123);
+    padding: 25px 10px 20px 10px;
+    border-radius: 15px;
+}
+
+span{
+    display: block;
+    margin-bottom: 30px;
+}
+
+input{
+    width: 70px;
+    height: 25px;
+    margin-bottom: 30px;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 70px;
+    background: rgb(74, 94, 211);
+    color: #fff;
+}
+
+#resultado{
+    margin: 20px;
+    text-align: center;
+}

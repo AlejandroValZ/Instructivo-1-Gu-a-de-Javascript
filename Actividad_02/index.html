@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Calculadora Básica</title>
+    </head>
+    <body>
+        <div id="form">
+            <span>Ingrese 2 números para operar:</span>
+            <span>*Máximo: 200 - Mínimo: -100</span>
+            <input id="input-uno" type="number" min="-100" max="200" step="1" 
+                oninput="(!validity.rangeOverflow || (value = 200))
+                && (!validity.rangeUnderflow || (value = -100)) 
+                && (!validity.stepMismatch || (value = parseInt(this.value)));"/>
+            <input id="input-dos" type="number" min="-100" max="200" step="1" 
+                oninput="(!validity.rangeOverflow || (value = 200))
+                && (!validity.rangeUnderflow || (value = -100)) 
+                && (!validity.stepMismatch || (value = parseInt(this.value)));"/>
+            <button id="btn-sumar">Sumar</button>
+            <button id="btn-restar">Restar</button>
+            <button id="btn-multiplicar">Multiplicar</button>
+            <button id="btn-dividir" >Dividir</button>
+        </div>
+        <div id="resultado"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
